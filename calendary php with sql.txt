@@ -1,0 +1,10 @@
+
+                          //http://jsfiddle.net/mccannf/AzmJv/16/
+                          //https://fullcalendar.io/docs/date-clicking-selecting-demo
+
+                      
+
+                        //https://www.youtube.com/watch?v=_lH9ZwAsvWM
+                        //https://www.webslesson.info/2017/12/jquery-fullcalandar-integration-with-php-and-mysql.html
+                        //https://www.youtube.com/watch?v=NvOvvwsV5Hg
+                        //https://www.youtube.com/watch?v=7bg8Yj-MkJw

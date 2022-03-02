@@ -1,0 +1,5 @@
+VISUAL STUDIO COMMUNITY: https://visualstudio.microsoft.com/es/
+ASP.NET CORE 5: https://dotnet.microsoft.com/download/dotnet/5.0
+https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
+SQL SERVER: https://www.microsoft.com/es-es/sql-server/sql-server-downloads
+SQL SERVER MANAGEMENT STUDIO: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
