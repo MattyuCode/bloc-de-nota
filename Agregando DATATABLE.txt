@@ -73,6 +73,7 @@ https://es.stackoverflow.com/questions/87338/cambiar-idioma-de-datatables -->
 
 npm i ngx-toastr
 
+
 https://codeseven.github.io/toastr/demo.html
 https://www.npmjs.com/package/ngx-toastr
 

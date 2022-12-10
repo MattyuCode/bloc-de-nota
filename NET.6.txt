@@ -7,7 +7,9 @@ Install-Package Microsoft.EntityFrameworkCore.Tools  -Version 6
 Install-Package Microsoft.EntityFrameworkCore.Design -Version 6
 Install-Package Pomelo.EntityFrameworkCore.MySql -Version 6
 
+//-----------para MYSQL
 Scaffold-Dbcontext "server=localhost;database=sakila;uid=root;password=database;" Pomelo.EntityFrameworkCore.MySql -o Models
+
 "ConnectionStrings": {
     "Mysql": "server=localhost;database=test;uid=root;password=;"
   }
@@ -18,6 +20,19 @@ builder.Services.AddDbContext<libraryContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
+
+
+
+
+//-----------para SQLSERVER
+Scaffold-Dbcontext "Server=MATTYU-AN; Database=testOne;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+"ConnectionStrings": {
+    "DefaultConnection": "Server=MATTYU-AN;Database=ProyectoNuevo;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+
+//configuracion de la cadena de conexion de SQLSERVER
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 builder.Services.AddRazorPages()
@@ -38,3 +53,5 @@ Install-Package Microsoft.EntityFrameworkCore.Tools
 Install-Package Microsoft.EntityFrameworkCore.Design
 Install-Package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
 Install-Package Pomelo.EntityFrameworkCore.MySql
+--------------------------------------------------
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
